@@ -45,7 +45,9 @@ export default function Home() {
             <div className="features-grid">
               <div className="feature-card">
                 <h3>Premium Selection</h3>
-                <p>Hand-picked luxury vehicles from the world's best brands</p>
+                <p>
+                  Hand-picked luxury vehicles from the world&apos;s best brands
+                </p>
               </div>
               <div className="feature-card">
                 <h3>Easy Booking</h3>

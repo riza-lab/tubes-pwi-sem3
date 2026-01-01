@@ -19,10 +19,12 @@ export default function Login() {
 
     // Check for admin login
     if (email === "drunxxvn@gmail.com" && password === "pukig4r1T") {
-      const { data, error } = await getSupabaseClient().auth.signInWithPassword({
-        email: "admin@gorent.com",
-        password: "admin123",
-      });
+      const { data, error } = await getSupabaseClient().auth.signInWithPassword(
+        {
+          email: "admin@gorent.com",
+          password: "admin123",
+        }
+      );
 
       if (error) {
         setError("Admin login failed");
@@ -104,7 +106,9 @@ export default function Login() {
           </form>
 
           <div className="text-center" style={{ marginTop: "1.5rem" }}>
-            <span style={{ color: "#6b7280" }}>Don't have an account? </span>
+            <span style={{ color: "#6b7280" }}>
+              Don&apos;t have an account?{" "}
+            </span>
             <Link href="/signup">Create one</Link>
           </div>
         </div>
